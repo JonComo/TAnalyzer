@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3324445B17406B060000642E /* JCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3324445A17406B060000642E /* JCConnection.m */; };
+		3324445D17406C570000642E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3324445C17406C570000642E /* Accounts.framework */; };
 		337CD3D417406936006E0354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337CD3D317406936006E0354 /* UIKit.framework */; };
 		337CD3D617406936006E0354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337CD3D517406936006E0354 /* Foundation.framework */; };
 		337CD3D817406936006E0354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337CD3D717406936006E0354 /* CoreGraphics.framework */; };
@@ -18,9 +20,16 @@
 		337CD3EA17406936006E0354 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 337CD3E917406936006E0354 /* Default-568h@2x.png */; };
 		337CD3ED17406936006E0354 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337CD3EB17406936006E0354 /* MainStoryboard.storyboard */; };
 		337CD3F017406936006E0354 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CD3EF17406936006E0354 /* TAViewController.m */; };
+		337CD3F7174069EA006E0354 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337CD3F6174069EA006E0354 /* Social.framework */; };
+		33FF1D80174AFAE20066E0E1 /* HeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FF1D7D174AFAE20066E0E1 /* HeatMap.m */; };
+		33FF1D81174AFAE20066E0E1 /* HeatMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FF1D7F174AFAE20066E0E1 /* HeatMapView.m */; };
+		33FF1D84174AFB6F0066E0E1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FF1D83174AFB6F0066E0E1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3324445917406B060000642E /* JCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCConnection.h; path = ../JCConnection.h; sourceTree = "<group>"; };
+		3324445A17406B060000642E /* JCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCConnection.m; path = ../JCConnection.m; sourceTree = "<group>"; };
+		3324445C17406C570000642E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		337CD3D017406936006E0354 /* TwitterAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337CD3D317406936006E0354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		337CD3D517406936006E0354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +46,12 @@
 		337CD3EC17406936006E0354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		337CD3EE17406936006E0354 /* TAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
 		337CD3EF17406936006E0354 /* TAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAViewController.m; sourceTree = "<group>"; };
+		337CD3F6174069EA006E0354 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		33FF1D7C174AFAE20066E0E1 /* HeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMap.h; sourceTree = "<group>"; };
+		33FF1D7D174AFAE20066E0E1 /* HeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMap.m; sourceTree = "<group>"; };
+		33FF1D7E174AFAE20066E0E1 /* HeatMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapView.h; sourceTree = "<group>"; };
+		33FF1D7F174AFAE20066E0E1 /* HeatMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapView.m; sourceTree = "<group>"; };
+		33FF1D83174AFB6F0066E0E1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FF1D84174AFB6F0066E0E1 /* MapKit.framework in Frameworks */,
+				3324445D17406C570000642E /* Accounts.framework in Frameworks */,
+				337CD3F7174069EA006E0354 /* Social.framework in Frameworks */,
 				337CD3D417406936006E0354 /* UIKit.framework in Frameworks */,
 				337CD3D617406936006E0354 /* Foundation.framework in Frameworks */,
 				337CD3D817406936006E0354 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +74,7 @@
 		337CD3C717406936006E0354 = {
 			isa = PBXGroup;
 			children = (
+				33FF1D82174AFAE70066E0E1 /* HeatMapOverlay */,
 				337CD3D917406936006E0354 /* TwitterAnalyzer */,
 				337CD3D217406936006E0354 /* Frameworks */,
 				337CD3D117406936006E0354 /* Products */,
@@ -73,6 +92,9 @@
 		337CD3D217406936006E0354 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33FF1D83174AFB6F0066E0E1 /* MapKit.framework */,
+				3324445C17406C570000642E /* Accounts.framework */,
+				337CD3F6174069EA006E0354 /* Social.framework */,
 				337CD3D317406936006E0354 /* UIKit.framework */,
 				337CD3D517406936006E0354 /* Foundation.framework */,
 				337CD3D717406936006E0354 /* CoreGraphics.framework */,
@@ -83,6 +105,8 @@
 		337CD3D917406936006E0354 /* TwitterAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				3324445917406B060000642E /* JCConnection.h */,
+				3324445A17406B060000642E /* JCConnection.m */,
 				337CD3E217406936006E0354 /* TAAppDelegate.h */,
 				337CD3E317406936006E0354 /* TAAppDelegate.m */,
 				337CD3EB17406936006E0354 /* MainStoryboard.storyboard */,
@@ -105,6 +129,17 @@
 				337CD3E917406936006E0354 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33FF1D82174AFAE70066E0E1 /* HeatMapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				33FF1D7C174AFAE20066E0E1 /* HeatMap.h */,
+				33FF1D7D174AFAE20066E0E1 /* HeatMap.m */,
+				33FF1D7E174AFAE20066E0E1 /* HeatMapView.h */,
+				33FF1D7F174AFAE20066E0E1 /* HeatMapView.m */,
+			);
+			name = HeatMapOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +212,9 @@
 				337CD3E017406936006E0354 /* main.m in Sources */,
 				337CD3E417406936006E0354 /* TAAppDelegate.m in Sources */,
 				337CD3F017406936006E0354 /* TAViewController.m in Sources */,
+				3324445B17406B060000642E /* JCConnection.m in Sources */,
+				33FF1D80174AFAE20066E0E1 /* HeatMap.m in Sources */,
+				33FF1D81174AFAE20066E0E1 /* HeatMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +337,7 @@
 				337CD3F517406936006E0354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
